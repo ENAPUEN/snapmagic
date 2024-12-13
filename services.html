@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Snap Magic Studio</title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="services.css">
+    <script defer src="services.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Snap Magic Studio Logo">
+            <div class="logo-text">
+                <h1>Snap Magic Studio</h1>
+                <p>Capture the Moment</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+        </nav>
+    </header>
+    <main>
+       
+<section class="highlighted-services">
+    <h2>Explore Our Services</h2>
+    <div class="services-preview">
+        <div class="service-card" onclick="scrollToBooking()">
+            <h3>Wedding Photography</h3>
+            <p>Capture the beauty of your special day with our expert wedding photography packages. <br> Starts from $2000</p>
+        </div>
+        <div class="service-card" onclick="scrollToBooking()">
+            <h3>Event Coverage</h3>
+            <p>From corporate events to live shows, we’ve got your event coverage needs covered.<br> Starts from $3000</p>
+        </div>
+        <div class="service-card" onclick="scrollToBooking()">
+            <h3>Portrait Photography</h3>
+            <p>Create timeless portraits for personal or professional purposes. <br> Starts from $500</p>
+        </div>
+    </div>
+</section>
+
+        <section class="portfolio">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-grid">
+                <img src="images/portfolio1.jpg" alt="Wedding Photography">
+                <img src="images/portfolio2.jpg" alt="Event Coverage">
+                <img src="images/portfolio3.jpg" alt="Portrait Photography">
+                <img src="images/portfolio4.jpg" alt="Outdoor Shoot">
+                <img src="images/portfolio5.jpg" alt="Family Portrait">
+                <img src="images/portfolio6.jpg" alt="Corporate Event">
+                <img src="images/portfolio7.jpg" alt="Product Shoot">
+                <img src="images/portfolio8.jpg" alt="Graduation Event">
+                <img src="images/portfolio9.jpg" alt="Maternity Photoshoot">
+             </div>
+        </section>
+
+        <section class="booking" id="booking">
+            <h2>Book a Session</h2>
+            <form id="bookingForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="service">Service:</label>
+                <select id="service" name="service" required>
+                    <option value="wedding">Wedding Photography</option>
+                    <option value="event">Event Coverage</option>
+                    <option value="portrait">Portrait Photography</option>
+                </select>
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+                <br>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Snap Magic Studio | Based in Sydney, Australia</p>
+    </footer>
+</body>
+</html>
